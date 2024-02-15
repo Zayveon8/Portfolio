@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+    background-color: #708180;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+  }
+  
+  .overflow-hidden-web {
+    overflow: hidden;
+    -webkit-overflow: hidden;
+  }
+
+  .theme-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #000;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .mode-label {
+    font-size: 16px;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  /* Add a stylish font and adjust typography */
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .navbar {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  font-family: 'Black Ops One', cursive;
+  display: block;
+  color: orange;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar li a:hover {
+  animation: jiggle 0.5s infinite;
+  color: red;
+}
+
+@keyframes jiggle {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(-5deg);
+    }
+    50% {
+      transform: rotateZ(0deg);
+    }
+    75% {
+      transform: rotateZ(5deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
+    }
+  }
+
+.squeeze-image {
+    transition: transform 0.3s;
+  }
+
+.squeeze-image:hover {
+    transform: scale(0.8);
+  }
+  
+
+.image-centered {
+    display: flex;
+    justify-content: center;
+  }
+
+
+.home_title-color {
+  color: orange;
+  font-size: 50px;
+  display: flex;
+  text-align: center; /* Centers content horizontally */
+}
+  
+.home_title-color2 {
+  color: red;
+  font-size: 25px;
+  text-align: center; /* Centers content horizontally */
+}
+
+
+/*==================== Buttons ==================*/
+
+button.clicked {
+  background-color: green;
+  color: white;
+}
+.button {
+  display: inline-block;
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+
+.footer {
+  background-color: blue;
+  color: black;
+  text-align: center;
+  font-weight: 1rem;
+  padding: 2rem 0;
+}
+
+.footer_title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#slide-heading {
+  position: absolute;
+  left: -200px; /* Initial position outside the screen */
+  transition: left 1s ease-in-out; /* Animation transition */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Set container height to full viewport height */
+}
+
+
+
+/*================ CONTACT ===============*/
+
+.contact_input {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: thick;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid red;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.contact_button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.contact_form {
+  width: 360px;
+}
+
+.contact_container {
+  justify-items: center;
+  
+}
+
+/*================= About ===================*/
+.about_container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about_subtitle {
+  margin-bottom: 25px;
+}
+
+.about_img {
+  justify-self: center;
+}
+
+.about_img img {
+  width: 200px;
+  border-radius: 0.5rem;
+}
+
+/*============= Media Queries =============*/
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .home {
+    height: 50vh;
+  }
+
+  .home_data {
+    align-self: flex-end;
+  }
+
+}
+
+#image-stack {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image.active {
+  opacity: 1;
+}
+
+.button-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.slideshow-button {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slideshow-button span {
+  margin-right: 5px;
+}
+
+.slideshow-button:hover {
+  background-color: #555;
+}
+
+
+/*================== SKILLS =====================*/
+.skills_container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.skils_subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.skills_text {
+  margin-bottom: var(--mb-4);
+}
+
+.skills_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: 0.5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills_icon {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: orange;
+}
+
+.skills_name {
+  display: flex;
+  align-items: center;
+}
+
+.skills_bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  height: 0.25rem;
+  border-radius: 0.5rem;
+
+}
+
+.skills_html {
+  width: 95%;
+}
+
+.skills_css {
+  width: 90%;
+}
+
+.skills_js {
+  width: 85%;
+}
+
+.skills_ux {
+  width: 95%;
+}
+
+.school-logo {
+  mix-blend-mode: color-burn;
+}

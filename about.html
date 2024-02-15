@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/bear.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zaye || Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="image-centered">
+  <a href="index.html">
+  <img src="image/bear.png" alt="Bear Logo" width="100" class="squeeze-image">
+  </a>
+  </div>
+
+  <div class="theme-switcher">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+
+</div>
+
+<header>
+    <nav>
+      <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!--================= About ==================-->
+<section class="about section" id="about">
+
+  <div class="about_container bg-grid">
+      <div>
+          <h2 class="about_subtitle">About</h2>
+          <p class="about_text">Welcome to my portfolio, it is a pleasure! I'm thrilled to have you here. Allow me to introduce myself. I am a driven and creative senior computer science major with a passion for web development. My journey in this field has been a captivating one, and I'm excited to see where my career takes me next.
+
+            Throughout my college years, I have delved into various areas of computer science, honing my skills and expanding my knowledge. I have a strong foundation in data structures and algorithms, which has equipped me with the problem-solving abilities necessary to tackle complex challenges. Moreover, I have explored a wide range of programming languages, including Python, Java, C#, C++, and SQL, enabling me to adapt to different technologies and project requirements.
+            
+            Web development has become my focal point of interest, and I am continuously enhancing my expertise in HTML, CSS, JavaScript, PHP, and React. The ever-evolving nature of the web keeps me inspired and eager to learn more. I strive to create captivating and user-friendly websites that not only meet client expectations but also push the boundaries of creativity and innovation.
+            
+            As a professional, I pride myself on being reliable. Deadlines are sacred to me, and I thrive under pressure. I approach every project with meticulous attention to detail, ensuring that the final product exceeds expectations. I believe in the power of collaboration and effective communication, as they are essential elements for building successful partnerships.
+            
+            Internships and job opportunities are what fuel my ambition. I have dedicated countless hours to refining my programming skills, always pushing myself to become the best programmer I can be. I am eager to contribute my expertise to a dynamic and forward-thinking organization where I can make a meaningful impact.
+            
+            Thank you for visiting my portfolio and taking the time to learn more about me. I hope that my passion, drive, and commitment to excellence shine through in my work. I am excited about the possibilities that lie ahead, and I would be honored to be a part of your team. Feel free to explore my projects and get in touch—I would love to connect and discuss how I can contribute to your organization's success.
+            
+            Let's build the future together.</p>
+      </div>
+
+      <div id="image-stack">
+        <img class="image" src="image/me.png" alt="Image 1">
+        <img class="image" src="image/static.jpg" alt="Image 2">
+        <img class="image" src="image/bear.png" alt="Image 3">
+      </div>
+      <div id="button-container">
+        <button id="prev-button" class="slideshow-button">
+          <span>&lt;</span> Previous
+        </button>
+        <button id="next-button" class="slideshow-button">
+          Next <span>&gt;</span>
+        </button>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(function() {
+          var images = $(".image");
+          var currentIndex = 0;
+          var prevButton = $("#prev-button");
+          var nextButton = $("#next-button");
+      
+          function showNextImage() {
+            var currentImage = images.eq(currentIndex);
+            var nextIndex = (currentIndex + 1) % images.length;
+            var nextImage = images.eq(nextIndex);
+      
+            currentImage.removeClass("active");
+            nextImage.addClass("active");
+      
+            currentIndex = nextIndex;
+          }
+      
+          function showPrevImage() {
+            var currentImage = images.eq(currentIndex);
+            var prevIndex = (currentIndex - 1 + images.length) % images.length;
+            var prevImage = images.eq(prevIndex);
+      
+            currentImage.removeClass("active");
+            prevImage.addClass("active");
+      
+            currentIndex = prevIndex;
+          }
+      
+          nextButton.click(showNextImage);
+          prevButton.click(showPrevImage);
+        });
+      </script>
+
+</section>
+
+<!--================ Footer ================-->
+<footer class="footer">
+  <p class="footer_title">Zaye</p>
+  <div class="footer_social">
+      <a href="#" class="footer_icon"><i class="bx bxl-facebook"></i></a>
+      <a href="#" class="footer_icon"><i class="bx bxl-instagram"></i></a>
+      <a href="#" class="footer_icon"><i class="bx bxl-twitter"></i></a>
+  </div>
+  <p>&copy; 2023 copyright all rights reserved</p>
+</footer>
