@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<CurrentBranch>release/6.0.4xx-xcode14.2</CurrentBranch>
+		<CurrentHash>ad4dea0a6fc33676ee35d89190d7a076f08435d3</CurrentHash>
+
+		<_ShortPackageVersion>16.2.19</_ShortPackageVersion>
+		<_PackageVersion>16.2.19+sha.ad4dea0a6</_PackageVersion>
+		<_DefaultTargetPlatformVersion>16.1</_DefaultTargetPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<_XamarinValidRuntimeIdentifier Include="maccatalyst-x64" Platform="MacCatalyst" /> 
+		<_XamarinValidRuntimeIdentifier Include="maccatalyst-arm64" Platform="MacCatalyst" />
+	</ItemGroup>
+</Project>
