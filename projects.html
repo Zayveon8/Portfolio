@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/bear.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects || Zay’veon Hill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Outfit:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div class="site-topbar">
+    <a href="index.html" class="brand-mark" aria-label="Home">
+      <img src="image/bear.png" alt="Bear Logo" class="squeeze-image">
+    </a>
+
+    <div class="theme-switcher" aria-label="Theme controls">
+      <span class="mode-label">Toggle Light/Dark Mode</span>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" aria-label="Toggle light and dark mode">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="projects" class="projects-section section">
+      <p class="eyebrow">Projects</p>
+      <h1 class="section_title">Projects that show where I’m headed.</h1>
+      <p class="section-intro">
+        This page now highlights the strongest projects from my resume, especially AI, enterprise workflow, supply chain, and full-stack systems work.
+      </p>
+
+      <div class="project-grid">
+        <article class="project-card featured-project">
+          <span class="project-tag">SRNS • AI Automation</span>
+          <h2>AI Powered SOW Generator</h2>
+          <p>Led a cross-functional team to design and deploy an AI tool that automates Statement of Work generation at a DOE/NNSA site. Customers answer a structured form, responses route through Microsoft Power Automate, and the AI model produces a fully formatted, site-compliant SOW.</p>
+          <p class="project-impact">Impact: reduces manual drafting, improves consistency, and speeds up turnaround time.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">SRNS • Procurement AI</span>
+          <h2>AI Assisted Procurement & Auto-Sourcing Tool</h2>
+          <p>Led development of an AI-powered purchasing assistant that searches historical requisitions for similar items, surfaces reusable item attributes, and helps distinguish contract and non-contract items to guide auto-sourcing decisions.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">SRNS • Operations Tech</span>
+          <h2>Warehouse Technology Modernization</h2>
+          <p>Spearheaded modernization of warehouse operations by provisioning mobile devices, deploying printing infrastructure, and integrating field operations into enterprise systems to reduce manual work and improve data accuracy.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">SRNS • Process Improvement</span>
+          <h2>Supply Chain Process Mapping</h2>
+          <p>Created detailed process maps across procurement, logistics, and supply chain layers to identify system misalignment, redundant workflows, and automation opportunities.</p>
+        </article>
+
+        <article class="project-card featured-project">
+          <span class="project-tag">Full Stack • AI/RAG</span>
+          <h2>AI RAG Document Assistant</h2>
+          <p>Building a full-stack AI application that enables semantic search and conversational Q&A over uploaded PDFs using a Retrieval Augmented Generation pipeline.</p>
+          <ul class="project-list">
+            <li>Python FastAPI backend</li>
+            <li>OpenAI API for LLM responses</li>
+            <li>Sentence Transformers for embeddings</li>
+            <li>FAISS vector database for high-speed retrieval</li>
+            <li>React and Tailwind frontend with SQLite chat history</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <span class="project-tag">Classic Build</span>
+          <h2>Worm Game</h2>
+          <p>A JavaScript game inspired by the classic Snake game. The player controls a worm, collects food, grows longer, and avoids collisions as the game gets faster.</p>
+          <div class="video-container">
+            <video controls>
+              <source src="video/wormGame.mp4" type="video/mp4">
+            </video>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer_social">
+      <a href="mailto:Zayhill21@gmail.com" class="footer_icon">Email</a>
+      <a href="https://github.com/zayveon8" target="_blank" rel="noopener noreferrer" class="footer_icon">GitHub</a>
+      <a href="https://linkedin.com/in/Zayveon" target="_blank" rel="noopener noreferrer" class="footer_icon">LinkedIn</a>
+      <a href="resume.html" class="footer_icon">Resume</a>
+    </div>
+    <p>&copy; 2026 Zay’veon Hill. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
